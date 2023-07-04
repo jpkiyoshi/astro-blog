@@ -14,7 +14,7 @@ const identity = {
 const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Astro', 'TypeScript'];
 
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 'today';
 
 const skillColor = 'navy';
@@ -29,7 +29,7 @@ const textCase = 'uppercase';
 		text-transform: var(--textCase);
 	}
 </style>
-<BaseLayout pageTitle='About Me'>
+<BaseLayout pageTitle={pageTitle}>
 	<p>Here are a few facts about me:</p>
 	<ul>
 		<li>My name is {identity.firstName}.</li>
