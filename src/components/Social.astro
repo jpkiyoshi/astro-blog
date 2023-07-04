@@ -1,0 +1,16 @@
+---
+const { platform, username } = Astro.props;
+---
+
+<style>
+	a {
+		text-decoration: none;
+		background-color: #4c1d95;
+		color: white;
+		padding: 10px 20px;
+	}
+</style>
+
+<a href={`https://www.${platform}.com/${platform === 'linkedin' ? 'in/' : ''}${username}`}
+	>{platform.charAt(0).toUpperCase() + platform.slice(1)}</a
+>
